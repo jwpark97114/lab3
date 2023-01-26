@@ -20,6 +20,14 @@ public class ArrayTests {
   public void testReverse1(){
     int[] comp = {1,2,3,4,5};
     int[] inv = {5,4,3,2,1};
-    assertArrayEquals(inv,ArrayExamples.reversed(comp));
+    ArrayExamples.reverseInPlace(comp);
+    assertArrayEquals(inv,comp);
+  }
+
+  @Test
+  public void testDoubleAve(){
+    assertEquals(3.1, 31.0/10, 0.001);
+    System.out.println(31.0/10);
+
   }
 }
